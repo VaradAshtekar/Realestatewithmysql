@@ -1,0 +1,313 @@
+section.feature-box.closeouts{
+    display: flex;
+    flex-direction: row;
+}
+li.nav-item:hover{
+    background: black;
+    transition: all 0.5s ease-in-out;
+    padding: 5px;
+    margin: 0;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.733);
+}
+h2 strong{
+    margin-left: 15%;
+    
+}
+h3{
+    margin-left:15%;
+}
+
+div#cities{
+  position: absolute;
+  top:40%;
+  left:20%;
+  z-index: 1;
+  box-shadow: 2px 2px 5px 3px black;
+}
+div.feature-box{
+    height:250px;
+    width: 250px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: transform 1s ease-in;
+    transform-style:preserve-3d;
+    cursor: pointer;
+    position: relative;
+    top:50%;
+    left:14%;
+}
+div.conf{
+    height:250px;
+    width:250px;
+    position:relative;
+    transition:transform 1s ease-in;
+    transform-style: preserve-3d;
+}
+div.bloga{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+}
+div.back{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    background-color: white;
+}
+div.bloga img{
+    width:100%;
+    height:100%;
+}
+div.bloga ::before{
+    position: absolute;
+    content:"";
+    transform:translateZ(100px);
+}
+div.back{
+    transform:rotateY(180deg);
+    background-color: white;
+}
+div.back-body{
+    text-align: center;
+    font-family: sans-serif;
+    top:50%;
+    left:50%;
+    color:black;
+    transform: translate(-50%,+50%);
+    transform: translateZ(150px);
+}
+div.feature-box:hover div.conf{
+    transform:rotateY(180deg);
+}
+h2 strong{
+  color: white;
+}
+h3{
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div.carousel-caption{
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.3);
+}
+/*
+/* search box*/
+div.search-box{
+    
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 45%;
+    left:50%;
+    transform:translate(-50%,+50%);
+    background: white;
+    height:50px;
+    border-radius: 40px;
+    padding:10px;
+    width:400px;
+    z-index:2;
+    opacity: 1;
+    box-shadow: 3px 3px 4px 3px;
+}
+a.search-btn{
+    background-image: url("Artboard_14-512.webp");
+    background-size:100%;
+    float:right;
+    width:40px;
+    height:40px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+input.search-txt{
+    
+    background: none;
+    border:40px;
+    outline:none;
+    float: left;
+    padding: 0;
+    color:black;
+    font-family: sans-serif;
+    font-size: 20px;
+    transition:0.4s;
+    line-height: 30px;
+    width:350px;
+    height: 30px;
+}
+/*
+*/
+div.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place*/ 
+    z-index: 8888; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: scroll; /* Enable scroll if needed*/ 
+    background-color: rgb(0,0,0); /* Fallback color*/ 
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity*/ 
+    }
+    
+div.modal-dialog{
+    background-color: #fefefe;
+    margin: 10vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+@media (min-width: 1366px) {
+div.modal-dialog{
+    background-color: #fefefe;
+    margin: 10vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    }
+}
+div.contact-form h2, p {
+    margin: 0 0 20px;
+    font-weight: 400;
+    color: #666;
+}
+span{
+    color: #666;
+    display:block;
+    padding:0 0 5px;
+}
+div.modal-body{
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 2px 5px #f5f5f5; 
+    background: #eee; 
+}
+div.modal-body input, textarea {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid green;
+    outline: none;
+}
+div.modal-body button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    background: limegreen; 
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+}
+div.modal-body button:hover {
+    background: limegreen;
+    box-shadow: 0px -2px 5px 4px greenyellow inset; 
+}    
+    /* The Close Button */
+a.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+    a.close:hover,
+    a.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Customize the label (the container) */
+label.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+  /* Hide the browser's default checkbox */
+label.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+  /* Create a custom checkbox */
+span.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+label.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+  /* When the checkbox is checked, add a blue background */
+label.container input:checked ~ span.checkmark {
+    background-color: #2196F3;
+}
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+span.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  /* Show the checkmark when checked */
+label.container input:checked ~ span.checkmark:after {
+    display: block;
+}
+  
+  /* Style the checkmark/indicator */
+label.container span.checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+div.ifr{
+    position: absolute;
+    left: 75%;
+    top: 100%;
+}
+p{
+    color: white;
+}
+section.bachelors{
+    display: flex;
+    flex-direction: row;
+}
